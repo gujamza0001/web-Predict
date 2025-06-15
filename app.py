@@ -19,7 +19,7 @@ def load_mobilenetv3_model():
     model.classifier[3] = nn.Linear(num_ftrs, 7)  # 7 คลาส: Day 1 - Day 7
     
     # 3. โหลด checkpoint (full LightningModule, ไม่ใช่แค่ state dict)
-    checkpoint_path = r"D:\ProjectMaster\MobileNet\MobileNetV3\mobilenetv3_large_100_checkpoint_fold4.pt"
+    checkpoint_path = r"MobileNetV3/mobilenetv3_large_100_checkpoint_fold4.pt"
     
     # 4. ใช้ add_safe_globals เพื่อโหลด checkpoint โดยไม่มีปัญหากับ unsafe globals
     from torch.serialization import add_safe_globals

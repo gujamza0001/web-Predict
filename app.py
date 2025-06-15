@@ -2,7 +2,7 @@ import torch
 import streamlit as st
 from PIL import Image
 import torchvision.transforms as transforms
-from model import MyLightningModel  # import โมเดลของเรา
+from model import MyLightningModel 
 
 # โหลดโมเดลแบบ Lightning full checkpoint
 @st.cache_resource
